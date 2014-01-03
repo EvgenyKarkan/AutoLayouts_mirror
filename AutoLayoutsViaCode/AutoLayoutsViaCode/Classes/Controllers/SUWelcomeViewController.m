@@ -48,11 +48,4 @@
 	[self presentViewController:self.myDestinationViewController animated:NO completion:nil];
 }
 
-- (NSUInteger)supportedInterfaceOrientations
-{
-    return UIInterfaceOrientationMaskPortrait |
-    UIInterfaceOrientationMaskLandscapeLeft |
-    UIInterfaceOrientationMaskLandscapeRight;
-}
-
 @end
