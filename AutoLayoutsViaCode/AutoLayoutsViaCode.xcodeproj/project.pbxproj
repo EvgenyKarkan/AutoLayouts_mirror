@@ -12,13 +12,20 @@
 		CE23C15A1876F46300EE14D6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE23C1591876F46300EE14D6 /* UIKit.framework */; };
 		CE23C1601876F46300EE14D6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE23C15E1876F46300EE14D6 /* InfoPlist.strings */; };
 		CE23C1621876F46300EE14D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE23C1611876F46300EE14D6 /* main.m */; };
-		CE23C1661876F46300EE14D6 /* SUAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE23C1651876F46300EE14D6 /* SUAppDelegate.m */; };
 		CE23C1681876F46300EE14D6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE23C1671876F46300EE14D6 /* Images.xcassets */; };
 		CE23C16F1876F46300EE14D6 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE23C16E1876F46300EE14D6 /* XCTest.framework */; };
 		CE23C1701876F46300EE14D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE23C1551876F46300EE14D6 /* Foundation.framework */; };
 		CE23C1711876F46300EE14D6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE23C1591876F46300EE14D6 /* UIKit.framework */; };
 		CE23C1791876F46300EE14D6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE23C1771876F46300EE14D6 /* InfoPlist.strings */; };
 		CE23C17B1876F46300EE14D6 /* AutoLayoutsViaCodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE23C17A1876F46300EE14D6 /* AutoLayoutsViaCodeTests.m */; };
+		CE23C1CD1876F82D00EE14D6 /* SUAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE23C1CB1876F82D00EE14D6 /* SUAppDelegate.m */; };
+		CE23C1DA1876FA6200EE14D6 /* SUWelcomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE23C1D91876FA6200EE14D6 /* SUWelcomeView.m */; };
+		CE23C1DD1876FA8B00EE14D6 /* SUFirstPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE23C1DC1876FA8B00EE14D6 /* SUFirstPageView.m */; };
+		CE23C1E01876FAA800EE14D6 /* SUSecondPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE23C1DF1876FAA800EE14D6 /* SUSecondPageView.m */; };
+		CE23C1E31876FAB900EE14D6 /* SUThirdPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE23C1E21876FAB900EE14D6 /* SUThirdPageView.m */; };
+		CE23C1E61876FAD200EE14D6 /* SUFourthPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE23C1E51876FAD200EE14D6 /* SUFourthPageView.m */; };
+		CE23C1EA1876FB5700EE14D6 /* SUWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE23C1E91876FB5700EE14D6 /* SUWelcomeViewController.m */; };
+		CE23C1ED1876FB8000EE14D6 /* SUDestinationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE23C1EC1876FB8000EE14D6 /* SUDestinationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,14 +47,28 @@
 		CE23C15F1876F46300EE14D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CE23C1611876F46300EE14D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CE23C1631876F46300EE14D6 /* AutoLayoutsViaCode-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AutoLayoutsViaCode-Prefix.pch"; sourceTree = "<group>"; };
-		CE23C1641876F46300EE14D6 /* SUAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SUAppDelegate.h; sourceTree = "<group>"; };
-		CE23C1651876F46300EE14D6 /* SUAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SUAppDelegate.m; sourceTree = "<group>"; };
 		CE23C1671876F46300EE14D6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CE23C16D1876F46300EE14D6 /* AutoLayoutsViaCodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoLayoutsViaCodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE23C16E1876F46300EE14D6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		CE23C1761876F46300EE14D6 /* AutoLayoutsViaCodeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AutoLayoutsViaCodeTests-Info.plist"; sourceTree = "<group>"; };
 		CE23C1781876F46300EE14D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CE23C17A1876F46300EE14D6 /* AutoLayoutsViaCodeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutsViaCodeTests.m; sourceTree = "<group>"; };
+		CE23C1CA1876F82D00EE14D6 /* SUAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUAppDelegate.h; sourceTree = "<group>"; };
+		CE23C1CB1876F82D00EE14D6 /* SUAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUAppDelegate.m; sourceTree = "<group>"; };
+		CE23C1D81876FA6200EE14D6 /* SUWelcomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUWelcomeView.h; sourceTree = "<group>"; };
+		CE23C1D91876FA6200EE14D6 /* SUWelcomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUWelcomeView.m; sourceTree = "<group>"; };
+		CE23C1DB1876FA8B00EE14D6 /* SUFirstPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUFirstPageView.h; sourceTree = "<group>"; };
+		CE23C1DC1876FA8B00EE14D6 /* SUFirstPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUFirstPageView.m; sourceTree = "<group>"; };
+		CE23C1DE1876FAA800EE14D6 /* SUSecondPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUSecondPageView.h; sourceTree = "<group>"; };
+		CE23C1DF1876FAA800EE14D6 /* SUSecondPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUSecondPageView.m; sourceTree = "<group>"; };
+		CE23C1E11876FAB900EE14D6 /* SUThirdPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUThirdPageView.h; sourceTree = "<group>"; };
+		CE23C1E21876FAB900EE14D6 /* SUThirdPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUThirdPageView.m; sourceTree = "<group>"; };
+		CE23C1E41876FAD200EE14D6 /* SUFourthPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUFourthPageView.h; sourceTree = "<group>"; };
+		CE23C1E51876FAD200EE14D6 /* SUFourthPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUFourthPageView.m; sourceTree = "<group>"; };
+		CE23C1E81876FB5700EE14D6 /* SUWelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUWelcomeViewController.h; sourceTree = "<group>"; };
+		CE23C1E91876FB5700EE14D6 /* SUWelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUWelcomeViewController.m; sourceTree = "<group>"; };
+		CE23C1EB1876FB8000EE14D6 /* SUDestinationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUDestinationViewController.h; sourceTree = "<group>"; };
+		CE23C1EC1876FB8000EE14D6 /* SUDestinationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUDestinationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +128,7 @@
 		CE23C15B1876F46300EE14D6 /* AutoLayoutsViaCode */ = {
 			isa = PBXGroup;
 			children = (
-				CE23C1641876F46300EE14D6 /* SUAppDelegate.h */,
-				CE23C1651876F46300EE14D6 /* SUAppDelegate.m */,
+				CE23C1C81876F82D00EE14D6 /* Classes */,
 				CE23C1671876F46300EE14D6 /* Images.xcassets */,
 				CE23C15C1876F46300EE14D6 /* Supporting Files */,
 			);
@@ -142,6 +162,45 @@
 				CE23C1771876F46300EE14D6 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE23C1C81876F82D00EE14D6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CE23C1CA1876F82D00EE14D6 /* SUAppDelegate.h */,
+				CE23C1CB1876F82D00EE14D6 /* SUAppDelegate.m */,
+				CE23C1D71876FA4F00EE14D6 /* Views */,
+				CE23C1E71876FB2A00EE14D6 /* Controllers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		CE23C1D71876FA4F00EE14D6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE23C1D81876FA6200EE14D6 /* SUWelcomeView.h */,
+				CE23C1D91876FA6200EE14D6 /* SUWelcomeView.m */,
+				CE23C1DB1876FA8B00EE14D6 /* SUFirstPageView.h */,
+				CE23C1DC1876FA8B00EE14D6 /* SUFirstPageView.m */,
+				CE23C1DE1876FAA800EE14D6 /* SUSecondPageView.h */,
+				CE23C1DF1876FAA800EE14D6 /* SUSecondPageView.m */,
+				CE23C1E11876FAB900EE14D6 /* SUThirdPageView.h */,
+				CE23C1E21876FAB900EE14D6 /* SUThirdPageView.m */,
+				CE23C1E41876FAD200EE14D6 /* SUFourthPageView.h */,
+				CE23C1E51876FAD200EE14D6 /* SUFourthPageView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CE23C1E71876FB2A00EE14D6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE23C1E81876FB5700EE14D6 /* SUWelcomeViewController.h */,
+				CE23C1E91876FB5700EE14D6 /* SUWelcomeViewController.m */,
+				CE23C1EB1876FB8000EE14D6 /* SUDestinationViewController.h */,
+				CE23C1EC1876FB8000EE14D6 /* SUDestinationViewController.m */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,8 +299,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE23C1661876F46300EE14D6 /* SUAppDelegate.m in Sources */,
+				CE23C1CD1876F82D00EE14D6 /* SUAppDelegate.m in Sources */,
+				CE23C1E61876FAD200EE14D6 /* SUFourthPageView.m in Sources */,
+				CE23C1ED1876FB8000EE14D6 /* SUDestinationViewController.m in Sources */,
+				CE23C1DA1876FA6200EE14D6 /* SUWelcomeView.m in Sources */,
+				CE23C1DD1876FA8B00EE14D6 /* SUFirstPageView.m in Sources */,
+				CE23C1E01876FAA800EE14D6 /* SUSecondPageView.m in Sources */,
 				CE23C1621876F46300EE14D6 /* main.m in Sources */,
+				CE23C1E31876FAB900EE14D6 /* SUThirdPageView.m in Sources */,
+				CE23C1EA1876FB5700EE14D6 /* SUWelcomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +510,7 @@
 				CE23C1801876F46300EE14D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE23C1811876F46300EE14D6 /* Build configuration list for PBXNativeTarget "AutoLayoutsViaCodeTests" */ = {
 			isa = XCConfigurationList;
@@ -452,6 +519,7 @@
 				CE23C1831876F46300EE14D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
