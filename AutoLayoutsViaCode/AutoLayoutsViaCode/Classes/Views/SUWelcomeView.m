@@ -12,17 +12,6 @@
 #import "SUThirdPageView.h"
 #import "SUFourthPageView.h"
 
-//typedef NS_OPTIONS(NSUInteger, UIViewAutoresizing) {
-//    UIViewAutoresizingNone                 = 0,
-//    UIViewAutoresizingFlexibleLeftMargin   = 1 << 0,
-//    UIViewAutoresizingFlexibleWidth        = 1 << 1,
-//    UIViewAutoresizingFlexibleRightMargin  = 1 << 2,
-//    UIViewAutoresizingFlexibleTopMargin    = 1 << 3,
-//    UIViewAutoresizingFlexibleHeight       = 1 << 4,
-//    UIViewAutoresizingFlexibleBottomMargin = 1 << 5
-//};
-
-
 @interface SUWelcomeView () <UIScrollViewDelegate>
 
 @property (nonatomic, strong) UIScrollView *scrollView;
@@ -33,11 +22,12 @@
 @property (nonatomic, strong) SUSecondPageView *secondView;
 @property (nonatomic, strong) SUThirdPageView *thirdView;
 @property (nonatomic, strong) SUFourthPageView *fourthView;
+@property (nonatomic, copy) NSArray *pages;
 
 @end
 
 
-@implementation SUWelcomeView
+@implementation SUWelcomeView;
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -46,12 +36,11 @@
 	if (self) {
 		self.backgroundColor = [UIColor lightGrayColor];
 		[self createSubViews];
+		self.pages = @[self.firstView, self.secondView, self.thirdView, self.fourthView];
 	}
     
 	return self;
 }
-
-#pragma mark - Init subviews stuff
 
 - (void)createSubViews
 {
@@ -60,7 +49,6 @@
 	self.scrollView.delegate = self;
 	self.scrollView.showsHorizontalScrollIndicator = NO;
 	self.scrollView.pagingEnabled = YES;
-//    self.scrollView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 	[self addSubview:self.scrollView];
     
 	self.firstView   = [[SUFirstPageView alloc] init];
@@ -92,19 +80,19 @@
 - (void)layoutSubviews
 {
 	[super layoutSubviews];
-	
-	self.scrollView.frame = CGRectMake(0.0f, self.frame.origin.y + 40.0f, self.frame.size.width, self.frame.size.height - 90.0f);
     
-	self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width * [[self.scrollView subviews] count], self.scrollView.frame.size.height);
+	self.scrollView.frame = CGRectMake(0.0f, self.frame.origin.y + 40.0f, self.bounds.size.width, self.bounds.size.height - 90.0f);
+	self.scrollView.contentSize = CGSizeMake(self.bounds.size.width * [self.pages count], self.scrollView.bounds.size.height);
+	self.scrollView.contentOffset = CGPointMake(self.bounds.size.width * self.pageControl.currentPage, 0);
     
-	self.pageControl.frame = CGRectMake(self.frame.origin.x, self.frame.size.height - 45.0f, self.frame.size.width, 40.0f);
-	
-	for (NSUInteger i = 0; i < [[self.scrollView subviews] count]; i++) {
-		[[[self.scrollView subviews] objectAtIndex:i] setFrame:CGRectMake(40.0f + (i * self.frame.size.width), 40.0f,
-		                                                                  self.frame.size.width - 80.0f, self.frame.size.height - 170.0f)];
+	self.pageControl.frame = CGRectMake(self.bounds.origin.x, self.bounds.size.height - 45.0f, self.bounds.size.width, 40.0f);
+    
+	for (NSUInteger i = 0; i < [self.pages count]; i++) {
+		[[[self.scrollView subviews] objectAtIndex:i] setFrame:CGRectMake(40.0f + (i * self.bounds.size.width), 40.0f,
+		                                                                  self.bounds.size.width - 80.0f, self.bounds.size.height - 170.0f)];
 	}
-	
-	self.button.frame = CGRectMake(self.frame.size.width - 50.0f, 15.0f, 50.0f, 30.0f);
+    
+	self.button.frame = CGRectMake(self.bounds.size.width - 50.0f, 15.0f, 50.0f, 20.0f);
 }
 
 #pragma mark - ScrollView's delegate stuff
@@ -112,8 +100,7 @@
 - (void)scrollViewDidScroll:(UIScrollView *)sender
 {
 	if (!self.pageControlBeingUsed) {
-		CGFloat pageWidth = self.scrollView.frame.size.width;
-		NSInteger page = floor((self.scrollView.contentOffset.x - pageWidth / 2.0f) / pageWidth) + 1;
+		NSInteger page = round(self.scrollView.contentOffset.x / self.scrollView.bounds.size.width);
 		self.pageControl.currentPage = page;
 	}
 }
@@ -133,7 +120,7 @@
 - (void)changePage:(id)sender
 {
 	if (sender) {
-		[self.scrollView setContentOffset:CGPointMake(self.frame.size.width * self.pageControl.currentPage, 0) animated:YES];
+		[self.scrollView setContentOffset:CGPointMake(self.bounds.size.width * self.pageControl.currentPage, 0) animated:YES];
 		self.pageControlBeingUsed = YES;
 	}
 }
@@ -146,6 +133,5 @@
 		[self.delegate dismissWelcomeScreen];
 	}
 }
-
 
 @end

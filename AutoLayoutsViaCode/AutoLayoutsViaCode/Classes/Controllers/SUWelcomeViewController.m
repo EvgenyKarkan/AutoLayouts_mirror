@@ -31,20 +31,20 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-    self.welcomeView.delegate = self;
+	[super viewDidLoad];
+	self.welcomeView.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning
 {
-    [super didReceiveMemoryWarning];
+	[super didReceiveMemoryWarning];
 }
 
 #pragma mark - EKDismissWelcomeScreenDelegate
 
 - (void)dismissWelcomeScreen
 {
-    self.myDestinationViewController = [[SUDestinationViewController alloc] init];
+	self.myDestinationViewController = [[SUDestinationViewController alloc] init];
 	[self presentViewController:self.myDestinationViewController animated:NO completion:nil];
 }
 

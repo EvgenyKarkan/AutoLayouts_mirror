@@ -14,15 +14,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+	self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    SUWelcomeViewController *welcomeViewController = [[SUWelcomeViewController alloc] init];
+	SUWelcomeViewController *welcomeViewController = [[SUWelcomeViewController alloc] init];
     
-    self.window.rootViewController = welcomeViewController;
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+	self.window.rootViewController = welcomeViewController;
+	self.window.backgroundColor = [UIColor whiteColor];
+	[self.window makeKeyAndVisible];
     
-    return YES;
+	return YES;
 }
 
 @end
