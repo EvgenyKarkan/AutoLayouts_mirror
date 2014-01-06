@@ -8,12 +8,6 @@
 
 #import "SUFirstPageView.h"
 
-@interface SUFirstPageView ()
-
-@property (nonatomic, strong) UILabel *hint;
-
-@end
-
 
 @implementation SUFirstPageView
 
@@ -24,15 +18,7 @@
 		self.backgroundColor = [[UIColor redColor] colorWithAlphaComponent:0.2f];
 	}
 	
-	self.hint = [[UILabel alloc] init];
-	self.hint.backgroundColor = [UIColor clearColor];
-	self.hint.textAlignment = NSTextAlignmentCenter;
-	self.hint.text = @"Here is your hints";
-	self.hint.textColor = [UIColor whiteColor];
-	[self addSubview:self.hint];
-    
     return self;
 }
-
 
 @end
