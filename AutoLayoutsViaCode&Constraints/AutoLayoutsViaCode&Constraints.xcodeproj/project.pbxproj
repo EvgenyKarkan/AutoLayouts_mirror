@@ -12,13 +12,19 @@
 		CE5416AC187AAC7C00DE6462 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5416AB187AAC7C00DE6462 /* UIKit.framework */; };
 		CE5416B2187AAC7C00DE6462 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE5416B0187AAC7C00DE6462 /* InfoPlist.strings */; };
 		CE5416B4187AAC7C00DE6462 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5416B3187AAC7C00DE6462 /* main.m */; };
-		CE5416B8187AAC7C00DE6462 /* SUAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5416B7187AAC7C00DE6462 /* SUAppDelegate.m */; };
 		CE5416BA187AAC7C00DE6462 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE5416B9187AAC7C00DE6462 /* Images.xcassets */; };
 		CE5416C1187AAC7C00DE6462 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5416C0187AAC7C00DE6462 /* XCTest.framework */; };
 		CE5416C2187AAC7C00DE6462 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5416A7187AAC7C00DE6462 /* Foundation.framework */; };
 		CE5416C3187AAC7C00DE6462 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5416AB187AAC7C00DE6462 /* UIKit.framework */; };
 		CE5416CB187AAC7C00DE6462 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE5416C9187AAC7C00DE6462 /* InfoPlist.strings */; };
 		CE5416CD187AAC7C00DE6462 /* AutoLayoutsViaCode_ConstraintsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5416CC187AAC7C00DE6462 /* AutoLayoutsViaCode_ConstraintsTests.m */; };
+		CE5416E4187AB33700DE6462 /* SUAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5416E2187AB33700DE6462 /* SUAppDelegate.m */; };
+		CE5416E7187AB37000DE6462 /* SUWelcomeViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5416E6187AB37000DE6462 /* SUWelcomeViewC.m */; };
+		CE5416EA187AB39000DE6462 /* SUWelcomeViewControllerC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5416E9187AB39000DE6462 /* SUWelcomeViewControllerC.m */; };
+		CE5416ED187ACDFB00DE6462 /* SUFirstPageViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5416EC187ACDFB00DE6462 /* SUFirstPageViewC.m */; };
+		CE5416F0187ACE2000DE6462 /* SUSecondPageViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5416EF187ACE2000DE6462 /* SUSecondPageViewC.m */; };
+		CE5416F3187ACE3900DE6462 /* SUThirdPageViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5416F2187ACE3900DE6462 /* SUThirdPageViewC.m */; };
+		CE5416F6187ACE6600DE6462 /* SUFourthPageViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5416F5187ACE6600DE6462 /* SUFourthPageViewC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,14 +46,26 @@
 		CE5416B1187AAC7C00DE6462 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CE5416B3187AAC7C00DE6462 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CE5416B5187AAC7C00DE6462 /* AutoLayoutsViaCode&Constraints-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AutoLayoutsViaCode&Constraints-Prefix.pch"; sourceTree = "<group>"; };
-		CE5416B6187AAC7C00DE6462 /* SUAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SUAppDelegate.h; sourceTree = "<group>"; };
-		CE5416B7187AAC7C00DE6462 /* SUAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SUAppDelegate.m; sourceTree = "<group>"; };
 		CE5416B9187AAC7C00DE6462 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CE5416BF187AAC7C00DE6462 /* AutoLayoutsViaCode&ConstraintsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AutoLayoutsViaCode&ConstraintsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE5416C0187AAC7C00DE6462 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		CE5416C8187AAC7C00DE6462 /* AutoLayoutsViaCode&ConstraintsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AutoLayoutsViaCode&ConstraintsTests-Info.plist"; sourceTree = "<group>"; };
 		CE5416CA187AAC7C00DE6462 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CE5416CC187AAC7C00DE6462 /* AutoLayoutsViaCode_ConstraintsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutsViaCode_ConstraintsTests.m; sourceTree = "<group>"; };
+		CE5416E1187AB33700DE6462 /* SUAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUAppDelegate.h; sourceTree = "<group>"; };
+		CE5416E2187AB33700DE6462 /* SUAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUAppDelegate.m; sourceTree = "<group>"; };
+		CE5416E5187AB37000DE6462 /* SUWelcomeViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUWelcomeViewC.h; sourceTree = "<group>"; };
+		CE5416E6187AB37000DE6462 /* SUWelcomeViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUWelcomeViewC.m; sourceTree = "<group>"; };
+		CE5416E8187AB39000DE6462 /* SUWelcomeViewControllerC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUWelcomeViewControllerC.h; sourceTree = "<group>"; };
+		CE5416E9187AB39000DE6462 /* SUWelcomeViewControllerC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUWelcomeViewControllerC.m; sourceTree = "<group>"; };
+		CE5416EB187ACDFB00DE6462 /* SUFirstPageViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUFirstPageViewC.h; sourceTree = "<group>"; };
+		CE5416EC187ACDFB00DE6462 /* SUFirstPageViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUFirstPageViewC.m; sourceTree = "<group>"; };
+		CE5416EE187ACE2000DE6462 /* SUSecondPageViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUSecondPageViewC.h; sourceTree = "<group>"; };
+		CE5416EF187ACE2000DE6462 /* SUSecondPageViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUSecondPageViewC.m; sourceTree = "<group>"; };
+		CE5416F1187ACE3900DE6462 /* SUThirdPageViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUThirdPageViewC.h; sourceTree = "<group>"; };
+		CE5416F2187ACE3900DE6462 /* SUThirdPageViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUThirdPageViewC.m; sourceTree = "<group>"; };
+		CE5416F4187ACE6600DE6462 /* SUFourthPageViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUFourthPageViewC.h; sourceTree = "<group>"; };
+		CE5416F5187ACE6600DE6462 /* SUFourthPageViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUFourthPageViewC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +125,7 @@
 		CE5416AD187AAC7C00DE6462 /* AutoLayoutsViaCode&Constraints */ = {
 			isa = PBXGroup;
 			children = (
-				CE5416B6187AAC7C00DE6462 /* SUAppDelegate.h */,
-				CE5416B7187AAC7C00DE6462 /* SUAppDelegate.m */,
+				CE5416DF187AB33700DE6462 /* Classes */,
 				CE5416B9187AAC7C00DE6462 /* Images.xcassets */,
 				CE5416AE187AAC7C00DE6462 /* Supporting Files */,
 			);
@@ -142,6 +159,43 @@
 				CE5416C9187AAC7C00DE6462 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE5416DF187AB33700DE6462 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CE5416E1187AB33700DE6462 /* SUAppDelegate.h */,
+				CE5416E2187AB33700DE6462 /* SUAppDelegate.m */,
+				CE5416E3187AB33700DE6462 /* Views */,
+				CE5416E0187AB33700DE6462 /* Controllers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		CE5416E0187AB33700DE6462 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE5416E8187AB39000DE6462 /* SUWelcomeViewControllerC.h */,
+				CE5416E9187AB39000DE6462 /* SUWelcomeViewControllerC.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CE5416E3187AB33700DE6462 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE5416E5187AB37000DE6462 /* SUWelcomeViewC.h */,
+				CE5416E6187AB37000DE6462 /* SUWelcomeViewC.m */,
+				CE5416EB187ACDFB00DE6462 /* SUFirstPageViewC.h */,
+				CE5416EC187ACDFB00DE6462 /* SUFirstPageViewC.m */,
+				CE5416EE187ACE2000DE6462 /* SUSecondPageViewC.h */,
+				CE5416EF187ACE2000DE6462 /* SUSecondPageViewC.m */,
+				CE5416F1187ACE3900DE6462 /* SUThirdPageViewC.h */,
+				CE5416F2187ACE3900DE6462 /* SUThirdPageViewC.m */,
+				CE5416F4187ACE6600DE6462 /* SUFourthPageViewC.h */,
+				CE5416F5187ACE6600DE6462 /* SUFourthPageViewC.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,8 +294,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE5416B8187AAC7C00DE6462 /* SUAppDelegate.m in Sources */,
+				CE5416F3187ACE3900DE6462 /* SUThirdPageViewC.m in Sources */,
+				CE5416E7187AB37000DE6462 /* SUWelcomeViewC.m in Sources */,
+				CE5416F0187ACE2000DE6462 /* SUSecondPageViewC.m in Sources */,
+				CE5416E4187AB33700DE6462 /* SUAppDelegate.m in Sources */,
 				CE5416B4187AAC7C00DE6462 /* main.m in Sources */,
+				CE5416F6187ACE6600DE6462 /* SUFourthPageViewC.m in Sources */,
+				CE5416ED187ACDFB00DE6462 /* SUFirstPageViewC.m in Sources */,
+				CE5416EA187AB39000DE6462 /* SUWelcomeViewControllerC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +504,7 @@
 				CE5416D2187AAC7C00DE6462 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE5416D3187AAC7C00DE6462 /* Build configuration list for PBXNativeTarget "AutoLayoutsViaCode&ConstraintsTests" */ = {
 			isa = XCConfigurationList;
@@ -452,6 +513,7 @@
 				CE5416D5187AAC7C00DE6462 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

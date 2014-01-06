@@ -36,7 +36,6 @@
 	if (self) {
 		self.backgroundColor = [UIColor lightGrayColor];
 		[self createSubViews];
-		self.pages = @[self.firstView, self.secondView, self.thirdView, self.fourthView];
 	}
     
 	return self;
@@ -64,7 +63,8 @@
 	[self.scrollView addSubview:self.fourthView];
     
 	self.pageControl = [[UIPageControl alloc] init];
-	self.pageControl.numberOfPages = [[self.scrollView subviews] count];
+    self.pages = @[self.firstView, self.secondView, self.thirdView, self.fourthView];
+	self.pageControl.numberOfPages = [self.pages count];
 	self.pageControl.currentPage = 0;
 	[self.pageControl addTarget:self action:@selector(changePage:) forControlEvents:UIControlEventTouchUpInside];
 	[self addSubview:self.pageControl];
