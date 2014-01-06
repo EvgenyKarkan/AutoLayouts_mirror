@@ -475,6 +475,7 @@
 				CE23C1C41876F4E700EE14D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE23C1C51876F4E700EE14D6 /* Build configuration list for PBXNativeTarget "AutoLayoutsViaStoryboardTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +484,7 @@
 				CE23C1C71876F4E700EE14D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
