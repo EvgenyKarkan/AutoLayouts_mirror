@@ -9,6 +9,7 @@
 #import "SUViewController.h"
 
 @interface SUViewController ()
+@property (weak, nonatomic) IBOutlet SUWelcomeViewS *foo;
 
 @end
 
