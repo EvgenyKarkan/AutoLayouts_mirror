@@ -7,7 +7,6 @@
 //
 
 #import "SUViewController.h"
-#import "SUWelcomeViewS.h"
 
 @interface SUViewController ()
 
@@ -15,7 +14,9 @@
 @end
 
 
-@implementation SUViewController
+@implementation SUViewController;
+
+#pragma mark - Life cycle
 
 - (void)viewDidLoad
 {
