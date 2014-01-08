@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE48A9F5187D891C00DBC1F4 /* SUDestinationViewControllerC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE48A9F4187D891C00DBC1F4 /* SUDestinationViewControllerC.m */; };
 		CE5416A8187AAC7C00DE6462 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5416A7187AAC7C00DE6462 /* Foundation.framework */; };
 		CE5416AA187AAC7C00DE6462 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5416A9187AAC7C00DE6462 /* CoreGraphics.framework */; };
 		CE5416AC187AAC7C00DE6462 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5416AB187AAC7C00DE6462 /* UIKit.framework */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE48A9F3187D891C00DBC1F4 /* SUDestinationViewControllerC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUDestinationViewControllerC.h; sourceTree = "<group>"; };
+		CE48A9F4187D891C00DBC1F4 /* SUDestinationViewControllerC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUDestinationViewControllerC.m; sourceTree = "<group>"; };
 		CE5416A4187AAC7C00DE6462 /* AutoLayoutsViaCode&Constraints.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AutoLayoutsViaCode&Constraints.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE5416A7187AAC7C00DE6462 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CE5416A9187AAC7C00DE6462 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -177,6 +180,8 @@
 			children = (
 				CE5416E8187AB39000DE6462 /* SUWelcomeViewControllerC.h */,
 				CE5416E9187AB39000DE6462 /* SUWelcomeViewControllerC.m */,
+				CE48A9F3187D891C00DBC1F4 /* SUDestinationViewControllerC.h */,
+				CE48A9F4187D891C00DBC1F4 /* SUDestinationViewControllerC.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -299,6 +304,7 @@
 				CE5416F0187ACE2000DE6462 /* SUSecondPageViewC.m in Sources */,
 				CE5416E4187AB33700DE6462 /* SUAppDelegate.m in Sources */,
 				CE5416B4187AAC7C00DE6462 /* main.m in Sources */,
+				CE48A9F5187D891C00DBC1F4 /* SUDestinationViewControllerC.m in Sources */,
 				CE5416F6187ACE6600DE6462 /* SUFourthPageViewC.m in Sources */,
 				CE5416ED187ACDFB00DE6462 /* SUFirstPageViewC.m in Sources */,
 				CE5416EA187AB39000DE6462 /* SUWelcomeViewControllerC.m in Sources */,

@@ -17,6 +17,6 @@
 
 @interface SUWelcomeViewC : UIView
 
-@property (nonatomic, weak) id  <SUDismissWelcomeScreenDelegate> delegate;
+@property (nonatomic, weak) id <SUDismissWelcomeScreenDelegate> delegate;
 
 @end

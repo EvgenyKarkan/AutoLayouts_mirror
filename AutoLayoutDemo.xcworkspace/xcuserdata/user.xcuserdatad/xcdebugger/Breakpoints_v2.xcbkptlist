@@ -25,7 +25,7 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AutoLayoutsViaStoryboard/AutoLayoutsViaStoryboard/Classes/Controllers/SUViewControllerS.h"
+            filePath = "AutoLayoutsViaStoryboard/AutoLayoutsViaStoryboard/Classes/Controllers/SUWelcomeViewControllerS.h"
             timestampString = "410875988.945874"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"

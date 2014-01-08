@@ -7,9 +7,10 @@
 //
 
 #import "SUWelcomeViewControllerC.h"
+#import "SUDestinationViewControllerC.h"
 #import "SUWelcomeViewC.h"
 
-@interface SUWelcomeViewControllerC ()
+@interface SUWelcomeViewControllerC () <SUDismissWelcomeScreenDelegate>
 
 @property (nonatomic, strong) SUWelcomeViewC *welcomeView;
 
@@ -30,11 +31,19 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.welcomeView.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
+}
+
+#pragma mark - SUDismissWelcomeScreenDelegate
+
+- (void)dismissWelcomeScreen
+{
+    [self presentViewController:[[SUDestinationViewControllerC alloc] init] animated:NO completion:nil];
 }
 
 @end

@@ -25,7 +25,8 @@
 		CE48A9EC187D461100DBC1F4 /* SUThirdPageViewS.m in Sources */ = {isa = PBXBuildFile; fileRef = CE48A9EB187D461100DBC1F4 /* SUThirdPageViewS.m */; };
 		CE48A9EF187D462300DBC1F4 /* SUFourthPageViewS.m in Sources */ = {isa = PBXBuildFile; fileRef = CE48A9EE187D462300DBC1F4 /* SUFourthPageViewS.m */; };
 		CE48A9F2187D790600DBC1F4 /* SUScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE48A9F1187D790600DBC1F4 /* SUScrollView.m */; };
-		DE45ADC8187C9769001053D4 /* SUViewControllerS.m in Sources */ = {isa = PBXBuildFile; fileRef = DE45ADC4187C9769001053D4 /* SUViewControllerS.m */; };
+		CE48A9F8187D8B0F00DBC1F4 /* SUDestinationViewControllerS.m in Sources */ = {isa = PBXBuildFile; fileRef = CE48A9F7187D8B0F00DBC1F4 /* SUDestinationViewControllerS.m */; };
+		DE45ADC8187C9769001053D4 /* SUWelcomeViewControllerS.m in Sources */ = {isa = PBXBuildFile; fileRef = DE45ADC4187C9769001053D4 /* SUWelcomeViewControllerS.m */; };
 		DE45ADC9187C9769001053D4 /* SUAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE45ADC6187C9769001053D4 /* SUAppDelegate.m */; };
 		DE45ADCC187C98E8001053D4 /* SUWelcomeViewS.m in Sources */ = {isa = PBXBuildFile; fileRef = DE45ADCB187C98E8001053D4 /* SUWelcomeViewS.m */; };
 /* End PBXBuildFile section */
@@ -67,8 +68,10 @@
 		CE48A9EE187D462300DBC1F4 /* SUFourthPageViewS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUFourthPageViewS.m; sourceTree = "<group>"; };
 		CE48A9F0187D790600DBC1F4 /* SUScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUScrollView.h; sourceTree = "<group>"; };
 		CE48A9F1187D790600DBC1F4 /* SUScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUScrollView.m; sourceTree = "<group>"; };
-		DE45ADC3187C9769001053D4 /* SUViewControllerS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUViewControllerS.h; sourceTree = "<group>"; };
-		DE45ADC4187C9769001053D4 /* SUViewControllerS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUViewControllerS.m; sourceTree = "<group>"; };
+		CE48A9F6187D8B0F00DBC1F4 /* SUDestinationViewControllerS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUDestinationViewControllerS.h; sourceTree = "<group>"; };
+		CE48A9F7187D8B0F00DBC1F4 /* SUDestinationViewControllerS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUDestinationViewControllerS.m; sourceTree = "<group>"; };
+		DE45ADC3187C9769001053D4 /* SUWelcomeViewControllerS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUWelcomeViewControllerS.h; sourceTree = "<group>"; };
+		DE45ADC4187C9769001053D4 /* SUWelcomeViewControllerS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUWelcomeViewControllerS.m; sourceTree = "<group>"; };
 		DE45ADC5187C9769001053D4 /* SUAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUAppDelegate.h; sourceTree = "<group>"; };
 		DE45ADC6187C9769001053D4 /* SUAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUAppDelegate.m; sourceTree = "<group>"; };
 		DE45ADCA187C98E8001053D4 /* SUWelcomeViewS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUWelcomeViewS.h; sourceTree = "<group>"; };
@@ -184,8 +187,10 @@
 		DE45ADC2187C9769001053D4 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				DE45ADC3187C9769001053D4 /* SUViewControllerS.h */,
-				DE45ADC4187C9769001053D4 /* SUViewControllerS.m */,
+				DE45ADC3187C9769001053D4 /* SUWelcomeViewControllerS.h */,
+				DE45ADC4187C9769001053D4 /* SUWelcomeViewControllerS.m */,
+				CE48A9F6187D8B0F00DBC1F4 /* SUDestinationViewControllerS.h */,
+				CE48A9F7187D8B0F00DBC1F4 /* SUDestinationViewControllerS.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -310,11 +315,12 @@
 			files = (
 				CE48A9EF187D462300DBC1F4 /* SUFourthPageViewS.m in Sources */,
 				CE48A9F2187D790600DBC1F4 /* SUScrollView.m in Sources */,
-				DE45ADC8187C9769001053D4 /* SUViewControllerS.m in Sources */,
+				DE45ADC8187C9769001053D4 /* SUWelcomeViewControllerS.m in Sources */,
 				DE45ADCC187C98E8001053D4 /* SUWelcomeViewS.m in Sources */,
 				CE23C19D1876F4E700EE14D6 /* main.m in Sources */,
 				CE48A9EC187D461100DBC1F4 /* SUThirdPageViewS.m in Sources */,
 				DE45ADC9187C9769001053D4 /* SUAppDelegate.m in Sources */,
+				CE48A9F8187D8B0F00DBC1F4 /* SUDestinationViewControllerS.m in Sources */,
 				CE48A9E6187D45D500DBC1F4 /* SUFirstPageViewS.m in Sources */,
 				CE48A9E9187D45E700DBC1F4 /* SUSecondPageViewS.m in Sources */,
 			);

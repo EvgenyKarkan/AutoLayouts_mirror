@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SUViewControllerS : UIViewController
+@interface SUWelcomeViewControllerS : UIViewController
 
 @end

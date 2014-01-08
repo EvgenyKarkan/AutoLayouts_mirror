@@ -27,7 +27,7 @@
 
 - (IBAction)skip:(UIButton *)sender
 {
-    NSLog(@"%d:%s",__LINE__,__PRETTY_FUNCTION__);
+    [self.delegate dismissWelcomeScreen];
 }
 
 - (IBAction)pageControlDidPressed:(UIPageControl *)sender

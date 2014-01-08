@@ -8,10 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol SUDismissWelcomeScreenDelegateS <NSObject>
+
+- (void)dismissWelcomeScreen;
+
+@end
+
+
 @interface SUWelcomeViewS : UIView
 
-@property (weak, nonatomic) IBOutlet UIScrollView *scrollViewS;
-@property (weak, nonatomic) IBOutlet UIButton *skipButtonS;
-@property (weak, nonatomic) IBOutlet UIPageControl *pageControlS;
+@property (nonatomic, weak) IBOutlet UIScrollView *scrollViewS;
+@property (nonatomic, weak) IBOutlet UIButton *skipButtonS;
+@property (nonatomic, weak) IBOutlet UIPageControl *pageControlS;
+@property (nonatomic, weak) id <SUDismissWelcomeScreenDelegateS> delegate;
 
 @end
