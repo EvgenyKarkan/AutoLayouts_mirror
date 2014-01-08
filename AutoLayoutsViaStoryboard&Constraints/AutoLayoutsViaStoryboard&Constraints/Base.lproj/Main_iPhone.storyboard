@@ -16,11 +16,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G6a-JO-Ral">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G6a-JO-Ral">
                                 <rect key="frame" x="0.0" y="44" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zw6-FA-dD8">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zw6-FA-dD8">
                                         <rect key="frame" x="20" y="51" width="280" height="378"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -54,21 +54,22 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="83b-5V-s8z">
-                                <rect key="frame" x="141" y="524" width="39" height="37"/>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="83b-5V-s8z">
+                                <rect key="frame" x="0.0" y="525" width="320" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </pageControl>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="G6a-JO-Ral" firstAttribute="top" secondItem="vOe-AF-9Er" secondAttribute="bottom" id="0Gb-tW-nFn"/>
+                            <constraint firstAttribute="trailing" secondItem="83b-5V-s8z" secondAttribute="trailing" id="1cv-6U-rjY"/>
+                            <constraint firstItem="83b-5V-s8z" firstAttribute="leading" secondItem="G6a-JO-Ral" secondAttribute="leading" id="4C9-7h-dzB"/>
                             <constraint firstItem="vOe-AF-9Er" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="14" id="4gi-Md-MCJ"/>
-                            <constraint firstItem="83b-5V-s8z" firstAttribute="centerX" secondItem="G6a-JO-Ral" secondAttribute="centerX" id="7pH-bn-lPE"/>
-                            <constraint firstItem="5MW-xE-Qyz" firstAttribute="top" secondItem="83b-5V-s8z" secondAttribute="bottom" constant="7" id="8zp-d6-BME"/>
-                            <constraint firstItem="83b-5V-s8z" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Q41-LW-2e7"/>
                             <constraint firstItem="G6a-JO-Ral" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="T2y-Y7-Rfl"/>
                             <constraint firstAttribute="trailing" secondItem="vOe-AF-9Er" secondAttribute="trailing" constant="5" id="Une-6I-rNj"/>
-                            <constraint firstItem="83b-5V-s8z" firstAttribute="top" secondItem="G6a-JO-Ral" secondAttribute="bottom" id="grU-LG-n9z"/>
+                            <constraint firstItem="83b-5V-s8z" firstAttribute="trailing" secondItem="G6a-JO-Ral" secondAttribute="trailing" id="jqI-T4-GGP"/>
+                            <constraint firstItem="5MW-xE-Qyz" firstAttribute="top" secondItem="83b-5V-s8z" secondAttribute="bottom" constant="6" id="k6o-Nl-0G0"/>
+                            <constraint firstItem="83b-5V-s8z" firstAttribute="top" secondItem="G6a-JO-Ral" secondAttribute="bottom" constant="1" id="rvv-4S-bzU"/>
                         </constraints>
                         <connections>
                             <outlet property="scrollViewSC" destination="G6a-JO-Ral" id="bBa-80-uXi"/>
