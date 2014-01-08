@@ -1,15 +1,14 @@
 //
-//  SUThirdPageViewS.m
-//  AutoLayoutsViaStoryboard
+//  SUThirdPageViewSC.m
+//  AutoLayoutsViaStoryboard&Constraints
 //
 //  Created by Evgeniy Karkan on 1/8/14.
 //  Copyright (c) 2014 EvgenyKarkan. All rights reserved.
 //
 
-#import "SUThirdPageViewS.h"
+#import "SUThirdPageViewSC.h"
 
-
-@implementation SUThirdPageViewS;
+@implementation SUThirdPageViewSC
 
 - (id)initWithCoder:(NSCoder *)aDecoder
 {

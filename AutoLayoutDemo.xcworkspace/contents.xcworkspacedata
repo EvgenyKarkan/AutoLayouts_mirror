@@ -2,15 +2,15 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:AutoLayoutsViaStoryboard&amp;Constraints/AutoLayoutsViaStoryboard&amp;Constraints.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:AutoLayoutsViaCode&amp;Constraints/AutoLayoutsViaCode&amp;Constraints.xcodeproj">
+      location = "group:AutoLayoutsViaCode/AutoLayoutsViaCode.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:AutoLayoutsViaStoryboard/AutoLayoutsViaStoryboard.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:AutoLayoutsViaCode/AutoLayoutsViaCode.xcodeproj">
+      location = "group:AutoLayoutsViaCode&amp;Constraints/AutoLayoutsViaCode&amp;Constraints.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:AutoLayoutsViaStoryboard&amp;Constraints/AutoLayoutsViaStoryboard&amp;Constraints.xcodeproj">
    </FileRef>
 </Workspace>

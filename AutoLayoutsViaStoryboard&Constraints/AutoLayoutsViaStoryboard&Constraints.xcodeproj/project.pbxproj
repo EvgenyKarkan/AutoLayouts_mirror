@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE48AA00187D91B500DBC1F4 /* SUViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE48A9FC187D91B500DBC1F4 /* SUViewController.m */; };
+		CE48AA01187D91B500DBC1F4 /* SUAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE48A9FE187D91B500DBC1F4 /* SUAppDelegate.m */; };
+		CE48AA04187D93F700DBC1F4 /* SUWelcomeViewSC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE48AA03187D93F700DBC1F4 /* SUWelcomeViewSC.m */; };
+		CE48AA07187D962E00DBC1F4 /* SUFirstPageViewSC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE48AA06187D962E00DBC1F4 /* SUFirstPageViewSC.m */; };
+		CE48AA0A187D968800DBC1F4 /* SUSecondPageViewSC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE48AA09187D968800DBC1F4 /* SUSecondPageViewSC.m */; };
+		CE48AA0D187D96BE00DBC1F4 /* SUThirdPageViewSC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE48AA0C187D96BE00DBC1F4 /* SUThirdPageViewSC.m */; };
+		CE48AA10187D975B00DBC1F4 /* SUFourthPageViewSC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE48AA0F187D975B00DBC1F4 /* SUFourthPageViewSC.m */; };
 		DE45AD81187C90F9001053D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE45AD80187C90F9001053D4 /* Foundation.framework */; };
 		DE45AD83187C90F9001053D4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE45AD82187C90F9001053D4 /* CoreGraphics.framework */; };
 		DE45AD85187C90F9001053D4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE45AD84187C90F9001053D4 /* UIKit.framework */; };
 		DE45AD8B187C90F9001053D4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DE45AD89187C90F9001053D4 /* InfoPlist.strings */; };
 		DE45AD8D187C90F9001053D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE45AD8C187C90F9001053D4 /* main.m */; };
-		DE45AD91187C90F9001053D4 /* SUAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE45AD90187C90F9001053D4 /* SUAppDelegate.m */; };
 		DE45AD94187C90F9001053D4 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE45AD92187C90F9001053D4 /* Main_iPhone.storyboard */; };
 		DE45AD97187C90F9001053D4 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE45AD95187C90F9001053D4 /* Main_iPad.storyboard */; };
-		DE45AD9A187C90F9001053D4 /* SUViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE45AD99187C90F9001053D4 /* SUViewController.m */; };
 		DE45AD9C187C90F9001053D4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE45AD9B187C90F9001053D4 /* Images.xcassets */; };
 		DE45ADA3187C90F9001053D4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE45ADA2187C90F9001053D4 /* XCTest.framework */; };
 		DE45ADA4187C90F9001053D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE45AD80187C90F9001053D4 /* Foundation.framework */; };
@@ -35,6 +40,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE48A9FB187D91B500DBC1F4 /* SUViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUViewController.h; sourceTree = "<group>"; };
+		CE48A9FC187D91B500DBC1F4 /* SUViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUViewController.m; sourceTree = "<group>"; };
+		CE48A9FD187D91B500DBC1F4 /* SUAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUAppDelegate.h; sourceTree = "<group>"; };
+		CE48A9FE187D91B500DBC1F4 /* SUAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUAppDelegate.m; sourceTree = "<group>"; };
+		CE48AA02187D93F700DBC1F4 /* SUWelcomeViewSC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUWelcomeViewSC.h; sourceTree = "<group>"; };
+		CE48AA03187D93F700DBC1F4 /* SUWelcomeViewSC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUWelcomeViewSC.m; sourceTree = "<group>"; };
+		CE48AA05187D962E00DBC1F4 /* SUFirstPageViewSC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUFirstPageViewSC.h; sourceTree = "<group>"; };
+		CE48AA06187D962E00DBC1F4 /* SUFirstPageViewSC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUFirstPageViewSC.m; sourceTree = "<group>"; };
+		CE48AA08187D968800DBC1F4 /* SUSecondPageViewSC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUSecondPageViewSC.h; sourceTree = "<group>"; };
+		CE48AA09187D968800DBC1F4 /* SUSecondPageViewSC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUSecondPageViewSC.m; sourceTree = "<group>"; };
+		CE48AA0B187D96BE00DBC1F4 /* SUThirdPageViewSC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUThirdPageViewSC.h; sourceTree = "<group>"; };
+		CE48AA0C187D96BE00DBC1F4 /* SUThirdPageViewSC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUThirdPageViewSC.m; sourceTree = "<group>"; };
+		CE48AA0E187D975B00DBC1F4 /* SUFourthPageViewSC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUFourthPageViewSC.h; sourceTree = "<group>"; };
+		CE48AA0F187D975B00DBC1F4 /* SUFourthPageViewSC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUFourthPageViewSC.m; sourceTree = "<group>"; };
 		DE45AD7D187C90F9001053D4 /* AutoLayoutsViaStoryboard&Constraints.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AutoLayoutsViaStoryboard&Constraints.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE45AD80187C90F9001053D4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DE45AD82187C90F9001053D4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -43,12 +62,8 @@
 		DE45AD8A187C90F9001053D4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DE45AD8C187C90F9001053D4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DE45AD8E187C90F9001053D4 /* AutoLayoutsViaStoryboard&Constraints-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AutoLayoutsViaStoryboard&Constraints-Prefix.pch"; sourceTree = "<group>"; };
-		DE45AD8F187C90F9001053D4 /* SUAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SUAppDelegate.h; sourceTree = "<group>"; };
-		DE45AD90187C90F9001053D4 /* SUAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SUAppDelegate.m; sourceTree = "<group>"; };
 		DE45AD93187C90F9001053D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		DE45AD96187C90F9001053D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		DE45AD98187C90F9001053D4 /* SUViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SUViewController.h; sourceTree = "<group>"; };
-		DE45AD99187C90F9001053D4 /* SUViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SUViewController.m; sourceTree = "<group>"; };
 		DE45AD9B187C90F9001053D4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DE45ADA1187C90F9001053D4 /* AutoLayoutsViaStoryboard&ConstraintsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AutoLayoutsViaStoryboard&ConstraintsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE45ADA2187C90F9001053D4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -81,6 +96,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE48A9F9187D91B500DBC1F4 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CE48A9FD187D91B500DBC1F4 /* SUAppDelegate.h */,
+				CE48A9FE187D91B500DBC1F4 /* SUAppDelegate.m */,
+				CE48A9FF187D91B500DBC1F4 /* Views */,
+				CE48A9FA187D91B500DBC1F4 /* Controllers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		CE48A9FA187D91B500DBC1F4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE48A9FB187D91B500DBC1F4 /* SUViewController.h */,
+				CE48A9FC187D91B500DBC1F4 /* SUViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CE48A9FF187D91B500DBC1F4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE48AA02187D93F700DBC1F4 /* SUWelcomeViewSC.h */,
+				CE48AA03187D93F700DBC1F4 /* SUWelcomeViewSC.m */,
+				CE48AA05187D962E00DBC1F4 /* SUFirstPageViewSC.h */,
+				CE48AA06187D962E00DBC1F4 /* SUFirstPageViewSC.m */,
+				CE48AA08187D968800DBC1F4 /* SUSecondPageViewSC.h */,
+				CE48AA09187D968800DBC1F4 /* SUSecondPageViewSC.m */,
+				CE48AA0B187D96BE00DBC1F4 /* SUThirdPageViewSC.h */,
+				CE48AA0C187D96BE00DBC1F4 /* SUThirdPageViewSC.m */,
+				CE48AA0E187D975B00DBC1F4 /* SUFourthPageViewSC.h */,
+				CE48AA0F187D975B00DBC1F4 /* SUFourthPageViewSC.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		DE45AD74187C90F9001053D4 = {
 			isa = PBXGroup;
 			children = (
@@ -114,12 +166,9 @@
 		DE45AD86187C90F9001053D4 /* AutoLayoutsViaStoryboard&Constraints */ = {
 			isa = PBXGroup;
 			children = (
-				DE45AD8F187C90F9001053D4 /* SUAppDelegate.h */,
-				DE45AD90187C90F9001053D4 /* SUAppDelegate.m */,
+				CE48A9F9187D91B500DBC1F4 /* Classes */,
 				DE45AD92187C90F9001053D4 /* Main_iPhone.storyboard */,
 				DE45AD95187C90F9001053D4 /* Main_iPad.storyboard */,
-				DE45AD98187C90F9001053D4 /* SUViewController.h */,
-				DE45AD99187C90F9001053D4 /* SUViewController.m */,
 				DE45AD9B187C90F9001053D4 /* Images.xcassets */,
 				DE45AD87187C90F9001053D4 /* Supporting Files */,
 			);
@@ -254,9 +303,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE45AD9A187C90F9001053D4 /* SUViewController.m in Sources */,
-				DE45AD91187C90F9001053D4 /* SUAppDelegate.m in Sources */,
+				CE48AA00187D91B500DBC1F4 /* SUViewController.m in Sources */,
+				CE48AA0A187D968800DBC1F4 /* SUSecondPageViewSC.m in Sources */,
+				CE48AA04187D93F700DBC1F4 /* SUWelcomeViewSC.m in Sources */,
 				DE45AD8D187C90F9001053D4 /* main.m in Sources */,
+				CE48AA0D187D96BE00DBC1F4 /* SUThirdPageViewSC.m in Sources */,
+				CE48AA10187D975B00DBC1F4 /* SUFourthPageViewSC.m in Sources */,
+				CE48AA01187D91B500DBC1F4 /* SUAppDelegate.m in Sources */,
+				CE48AA07187D962E00DBC1F4 /* SUFirstPageViewSC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +529,7 @@
 				DE45ADB4187C90F9001053D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DE45ADB5187C90F9001053D4 /* Build configuration list for PBXNativeTarget "AutoLayoutsViaStoryboard&ConstraintsTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +538,7 @@
 				DE45ADB7187C90F9001053D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

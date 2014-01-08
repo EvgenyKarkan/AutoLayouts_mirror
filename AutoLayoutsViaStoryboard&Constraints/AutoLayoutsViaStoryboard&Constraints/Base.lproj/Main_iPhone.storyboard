@@ -1,21 +1,107 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4451" systemVersion="13A461" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3676"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="SUViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hWw-uz-3NS"/>
+                        <viewControllerLayoutGuide type="bottom" id="5MW-xE-Qyz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS" customClass="SUWelcomeViewSC">
+                        <rect key="frame" x="0.0" y="0.0" width="1280" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G6a-JO-Ral">
+                                <rect key="frame" x="0.0" y="44" width="1280" height="480"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nmk-lm-pHc" customClass="SUFirstPageViewSC">
+                                        <rect key="frame" x="20" y="20" width="280" height="440"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="280" id="8ZP-go-TP7"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="440" id="PEM-tZ-yW5" userLabel="Height - (440) - First Page ViewSC"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fQn-ag-hup" customClass="SUSecondPageViewSC">
+                                        <rect key="frame" x="337" y="20" width="280" height="440"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="280" id="MZg-Vg-fJb"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="440" id="Oli-8A-9zY"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NJb-QD-mMf" customClass="SUThirdPageViewSC">
+                                        <rect key="frame" x="660" y="20" width="280" height="440"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="280" id="5GE-lT-XuP"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="440" id="PAE-CW-qcl"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CZl-py-2Uw" customClass="SUFirstPageViewSC">
+                                        <rect key="frame" x="980" y="20" width="280" height="440"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="440" id="U3b-5i-hcy"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="280" id="r5Q-EO-PMO"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="CZl-py-2Uw" secondAttribute="bottom" constant="20" id="3JT-H9-y2f"/>
+                                    <constraint firstAttribute="bottom" secondItem="NJb-QD-mMf" secondAttribute="bottom" constant="20" id="DUU-jI-8vQ"/>
+                                    <constraint firstItem="NJb-QD-mMf" firstAttribute="width" secondItem="CZl-py-2Uw" secondAttribute="width" id="I2T-aT-qWQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="fQn-ag-hup" secondAttribute="bottom" constant="20" id="I3l-D0-Sw3"/>
+                                    <constraint firstItem="fQn-ag-hup" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Nmk-lm-pHc" secondAttribute="trailing" constant="40" id="PT9-5V-VzC"/>
+                                    <constraint firstAttribute="trailing" secondItem="CZl-py-2Uw" secondAttribute="trailing" constant="20" id="SnO-xb-hWb"/>
+                                    <constraint firstItem="Nmk-lm-pHc" firstAttribute="top" secondItem="G6a-JO-Ral" secondAttribute="top" constant="20" id="VeD-lm-1Xb"/>
+                                    <constraint firstItem="fQn-ag-hup" firstAttribute="top" secondItem="G6a-JO-Ral" secondAttribute="top" constant="20" id="VhM-Pj-hWg"/>
+                                    <constraint firstItem="CZl-py-2Uw" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="NJb-QD-mMf" secondAttribute="trailing" constant="40" id="a7B-BU-Qqe"/>
+                                    <constraint firstItem="Nmk-lm-pHc" firstAttribute="leading" secondItem="G6a-JO-Ral" secondAttribute="leading" constant="20" id="agx-DC-GYo"/>
+                                    <constraint firstItem="Nmk-lm-pHc" firstAttribute="height" secondItem="fQn-ag-hup" secondAttribute="height" id="hAD-Ok-mP5"/>
+                                    <constraint firstItem="NJb-QD-mMf" firstAttribute="height" secondItem="CZl-py-2Uw" secondAttribute="height" id="hBe-Um-KiB"/>
+                                    <constraint firstItem="NJb-QD-mMf" firstAttribute="top" secondItem="G6a-JO-Ral" secondAttribute="top" constant="20" id="hiv-xu-CP8"/>
+                                    <constraint firstItem="NJb-QD-mMf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fQn-ag-hup" secondAttribute="trailing" constant="40" id="jA3-KQ-Fjq"/>
+                                    <constraint firstItem="CZl-py-2Uw" firstAttribute="top" secondItem="G6a-JO-Ral" secondAttribute="top" constant="20" id="lsa-aa-SSD"/>
+                                    <constraint firstItem="Nmk-lm-pHc" firstAttribute="width" secondItem="fQn-ag-hup" secondAttribute="width" id="x26-bK-gT0"/>
+                                    <constraint firstAttribute="bottom" secondItem="Nmk-lm-pHc" secondAttribute="bottom" constant="20" id="y94-40-Mhd"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                                        <size key="value" width="1280" height="280"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="rect" keyPath="frame">
+                                        <rect key="value" x="0.0" y="44" width="320" height="480"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="G6a-JO-Ral" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="44" id="0ss-Ds-0zx"/>
+                            <constraint firstItem="G6a-JO-Ral" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="44" id="3Y6-It-9bd"/>
+                            <constraint firstAttribute="bottom" secondItem="G6a-JO-Ral" secondAttribute="bottom" constant="44" id="UAk-pu-f2z"/>
+                            <constraint firstAttribute="bottom" secondItem="G6a-JO-Ral" secondAttribute="bottom" constant="44" id="Yaq-qA-aF1"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="scrollViewSC" destination="G6a-JO-Ral" id="bBa-80-uXi"/>
+                        </connections>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="160" y="-80"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
