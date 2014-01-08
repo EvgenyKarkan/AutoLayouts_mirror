@@ -96,9 +96,6 @@
                             <outlet property="skipButtonS" destination="zyP-So-TIC" id="glJ-kv-VLB"/>
                         </connections>
                     </view>
-                    <connections>
-                        <outlet property="welcomeViewS" destination="kh9-bI-dsS" id="HJH-56-wUh"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

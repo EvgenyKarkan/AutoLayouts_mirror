@@ -7,13 +7,6 @@
 //
 
 #import "SUViewControllerS.h"
-#import "SUWelcomeViewS.h"
-
-@interface SUViewControllerS ()
-
-@property (nonatomic, strong) IBOutlet SUWelcomeViewS *welcomeViewS;
-
-@end
 
 
 @implementation SUViewControllerS;
@@ -29,10 +22,5 @@
 {
     [super didReceiveMemoryWarning];
 }
-
-
-#pragma mark - Rotation
-
-
 
 @end
