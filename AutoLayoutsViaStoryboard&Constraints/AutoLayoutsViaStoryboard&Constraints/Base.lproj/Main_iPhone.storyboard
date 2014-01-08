@@ -16,12 +16,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G6a-JO-Ral">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G6a-JO-Ral">
                                 <rect key="frame" x="0.0" y="44" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zw6-FA-dD8">
+                                        <rect key="frame" x="20" y="51" width="280" height="378"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="568" id="HOh-2J-Bic"/>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="480" id="Luf-dz-epf"/>
+                                    <constraint firstItem="Zw6-FA-dD8" firstAttribute="centerX" secondItem="G6a-JO-Ral" secondAttribute="centerX" id="52L-D8-18h"/>
+                                    <constraint firstAttribute="bottom" secondItem="Zw6-FA-dD8" secondAttribute="bottom" constant="51" id="8bV-ix-Ibx"/>
+                                    <constraint firstItem="Zw6-FA-dD8" firstAttribute="leading" secondItem="G6a-JO-Ral" secondAttribute="leading" constant="20" symbolic="YES" id="CzB-cE-J8R"/>
+                                    <constraint firstAttribute="trailing" secondItem="Zw6-FA-dD8" secondAttribute="trailing" constant="20" symbolic="YES" id="Mip-6F-4Sv"/>
+                                    <constraint firstItem="Zw6-FA-dD8" firstAttribute="top" secondItem="G6a-JO-Ral" secondAttribute="top" constant="51" id="dyQ-aL-2RA"/>
+                                    <constraint firstItem="Zw6-FA-dD8" firstAttribute="centerY" secondItem="G6a-JO-Ral" secondAttribute="centerY" id="uZz-h8-qiz"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
@@ -32,9 +43,12 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vOe-AF-9Er">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vOe-AF-9Er">
                                 <rect key="frame" x="269" y="14" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="E4b-99-8CA"/>
+                                </constraints>
                                 <state key="normal" title="Skip">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -47,13 +61,14 @@
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="G6a-JO-Ral" secondAttribute="bottom" constant="44" id="OUW-Bv-gyj"/>
-                            <constraint firstItem="83b-5V-s8z" firstAttribute="top" secondItem="G6a-JO-Ral" secondAttribute="bottom" id="Sq7-T8-ryn"/>
-                            <constraint firstAttribute="trailing" secondItem="vOe-AF-9Er" secondAttribute="trailing" constant="5" id="bPi-0r-m6J"/>
-                            <constraint firstAttribute="trailing" secondItem="83b-5V-s8z" secondAttribute="trailing" constant="140" id="dO1-Uf-92b"/>
-                            <constraint firstItem="83b-5V-s8z" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="141" id="fCg-oJ-lVB"/>
-                            <constraint firstItem="G6a-JO-Ral" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="44" id="ocP-Qq-pt2"/>
-                            <constraint firstItem="G6a-JO-Ral" firstAttribute="top" secondItem="vOe-AF-9Er" secondAttribute="bottom" id="rah-Fe-n6b"/>
+                            <constraint firstItem="G6a-JO-Ral" firstAttribute="top" secondItem="vOe-AF-9Er" secondAttribute="bottom" id="0Gb-tW-nFn"/>
+                            <constraint firstItem="vOe-AF-9Er" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="14" id="4gi-Md-MCJ"/>
+                            <constraint firstItem="83b-5V-s8z" firstAttribute="centerX" secondItem="G6a-JO-Ral" secondAttribute="centerX" id="7pH-bn-lPE"/>
+                            <constraint firstItem="5MW-xE-Qyz" firstAttribute="top" secondItem="83b-5V-s8z" secondAttribute="bottom" constant="7" id="8zp-d6-BME"/>
+                            <constraint firstItem="83b-5V-s8z" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Q41-LW-2e7"/>
+                            <constraint firstItem="G6a-JO-Ral" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="T2y-Y7-Rfl"/>
+                            <constraint firstAttribute="trailing" secondItem="vOe-AF-9Er" secondAttribute="trailing" constant="5" id="Une-6I-rNj"/>
+                            <constraint firstItem="83b-5V-s8z" firstAttribute="top" secondItem="G6a-JO-Ral" secondAttribute="bottom" id="grU-LG-n9z"/>
                         </constraints>
                         <connections>
                             <outlet property="scrollViewSC" destination="G6a-JO-Ral" id="bBa-80-uXi"/>
