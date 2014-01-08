@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:AutoLayoutsViaStoryboard&amp;Constraints/AutoLayoutsViaStoryboard&amp;Constraints.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:AutoLayoutsViaCode&amp;Constraints/AutoLayoutsViaCode&amp;Constraints.xcodeproj">
    </FileRef>
    <FileRef

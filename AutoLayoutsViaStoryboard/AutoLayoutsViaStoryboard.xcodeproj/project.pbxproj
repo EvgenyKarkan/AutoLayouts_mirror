@@ -20,6 +20,11 @@
 		CE23C1B51876F4E700EE14D6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE23C1941876F4E700EE14D6 /* UIKit.framework */; };
 		CE23C1BD1876F4E700EE14D6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE23C1BB1876F4E700EE14D6 /* InfoPlist.strings */; };
 		CE23C1BF1876F4E700EE14D6 /* AutoLayoutsViaStoryboardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE23C1BE1876F4E700EE14D6 /* AutoLayoutsViaStoryboardTests.m */; };
+		CE48A9E6187D45D500DBC1F4 /* SUFirstPageViewS.m in Sources */ = {isa = PBXBuildFile; fileRef = CE48A9E5187D45D500DBC1F4 /* SUFirstPageViewS.m */; };
+		CE48A9E9187D45E700DBC1F4 /* SUSecondPageViewS.m in Sources */ = {isa = PBXBuildFile; fileRef = CE48A9E8187D45E700DBC1F4 /* SUSecondPageViewS.m */; };
+		CE48A9EC187D461100DBC1F4 /* SUThirdPageViewS.m in Sources */ = {isa = PBXBuildFile; fileRef = CE48A9EB187D461100DBC1F4 /* SUThirdPageViewS.m */; };
+		CE48A9EF187D462300DBC1F4 /* SUFourthPageViewS.m in Sources */ = {isa = PBXBuildFile; fileRef = CE48A9EE187D462300DBC1F4 /* SUFourthPageViewS.m */; };
+		CE48A9F2187D790600DBC1F4 /* SUScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE48A9F1187D790600DBC1F4 /* SUScrollView.m */; };
 		DE45ADC8187C9769001053D4 /* SUViewControllerS.m in Sources */ = {isa = PBXBuildFile; fileRef = DE45ADC4187C9769001053D4 /* SUViewControllerS.m */; };
 		DE45ADC9187C9769001053D4 /* SUAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE45ADC6187C9769001053D4 /* SUAppDelegate.m */; };
 		DE45ADCC187C98E8001053D4 /* SUWelcomeViewS.m in Sources */ = {isa = PBXBuildFile; fileRef = DE45ADCB187C98E8001053D4 /* SUWelcomeViewS.m */; };
@@ -52,6 +57,16 @@
 		CE23C1BA1876F4E700EE14D6 /* AutoLayoutsViaStoryboardTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AutoLayoutsViaStoryboardTests-Info.plist"; sourceTree = "<group>"; };
 		CE23C1BC1876F4E700EE14D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CE23C1BE1876F4E700EE14D6 /* AutoLayoutsViaStoryboardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutsViaStoryboardTests.m; sourceTree = "<group>"; };
+		CE48A9E4187D45D500DBC1F4 /* SUFirstPageViewS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUFirstPageViewS.h; sourceTree = "<group>"; };
+		CE48A9E5187D45D500DBC1F4 /* SUFirstPageViewS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUFirstPageViewS.m; sourceTree = "<group>"; };
+		CE48A9E7187D45E700DBC1F4 /* SUSecondPageViewS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUSecondPageViewS.h; sourceTree = "<group>"; };
+		CE48A9E8187D45E700DBC1F4 /* SUSecondPageViewS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUSecondPageViewS.m; sourceTree = "<group>"; };
+		CE48A9EA187D461100DBC1F4 /* SUThirdPageViewS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUThirdPageViewS.h; sourceTree = "<group>"; };
+		CE48A9EB187D461100DBC1F4 /* SUThirdPageViewS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUThirdPageViewS.m; sourceTree = "<group>"; };
+		CE48A9ED187D462300DBC1F4 /* SUFourthPageViewS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUFourthPageViewS.h; sourceTree = "<group>"; };
+		CE48A9EE187D462300DBC1F4 /* SUFourthPageViewS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUFourthPageViewS.m; sourceTree = "<group>"; };
+		CE48A9F0187D790600DBC1F4 /* SUScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUScrollView.h; sourceTree = "<group>"; };
+		CE48A9F1187D790600DBC1F4 /* SUScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUScrollView.m; sourceTree = "<group>"; };
 		DE45ADC3187C9769001053D4 /* SUViewControllerS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUViewControllerS.h; sourceTree = "<group>"; };
 		DE45ADC4187C9769001053D4 /* SUViewControllerS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUViewControllerS.m; sourceTree = "<group>"; };
 		DE45ADC5187C9769001053D4 /* SUAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUAppDelegate.h; sourceTree = "<group>"; };
@@ -180,6 +195,16 @@
 			children = (
 				DE45ADCA187C98E8001053D4 /* SUWelcomeViewS.h */,
 				DE45ADCB187C98E8001053D4 /* SUWelcomeViewS.m */,
+				CE48A9E4187D45D500DBC1F4 /* SUFirstPageViewS.h */,
+				CE48A9E5187D45D500DBC1F4 /* SUFirstPageViewS.m */,
+				CE48A9E7187D45E700DBC1F4 /* SUSecondPageViewS.h */,
+				CE48A9E8187D45E700DBC1F4 /* SUSecondPageViewS.m */,
+				CE48A9EA187D461100DBC1F4 /* SUThirdPageViewS.h */,
+				CE48A9EB187D461100DBC1F4 /* SUThirdPageViewS.m */,
+				CE48A9ED187D462300DBC1F4 /* SUFourthPageViewS.h */,
+				CE48A9EE187D462300DBC1F4 /* SUFourthPageViewS.m */,
+				CE48A9F0187D790600DBC1F4 /* SUScrollView.h */,
+				CE48A9F1187D790600DBC1F4 /* SUScrollView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -283,10 +308,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE48A9EF187D462300DBC1F4 /* SUFourthPageViewS.m in Sources */,
+				CE48A9F2187D790600DBC1F4 /* SUScrollView.m in Sources */,
 				DE45ADC8187C9769001053D4 /* SUViewControllerS.m in Sources */,
 				DE45ADCC187C98E8001053D4 /* SUWelcomeViewS.m in Sources */,
 				CE23C19D1876F4E700EE14D6 /* main.m in Sources */,
+				CE48A9EC187D461100DBC1F4 /* SUThirdPageViewS.m in Sources */,
 				DE45ADC9187C9769001053D4 /* SUAppDelegate.m in Sources */,
+				CE48A9E6187D45D500DBC1F4 /* SUFirstPageViewS.m in Sources */,
+				CE48A9E9187D45E700DBC1F4 /* SUSecondPageViewS.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface SUWelcomeViewS : UIView
+
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollViewS;
 @property (weak, nonatomic) IBOutlet UIButton *skipButtonS;
 @property (weak, nonatomic) IBOutlet UIPageControl *pageControlS;
