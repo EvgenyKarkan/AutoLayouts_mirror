@@ -73,6 +73,13 @@
 	[self.button setTitle:@"Skip" forState:UIControlStateNormal];
 	[self.button addTarget:self action:@selector(goNext) forControlEvents:UIControlEventTouchUpInside];
 	[self addSubview:self.button];
+    
+    //Listening to UIDevice notification
+    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(deviceOrientationDidChange:)
+                                                 name:UIDeviceOrientationDidChangeNotification
+                                               object:nil];
 }
 
 #pragma mark - Layout subviews stuff
@@ -120,7 +127,8 @@
 - (void)changePage:(id)sender
 {
 	if (sender) {
-		[self.scrollView setContentOffset:CGPointMake(self.bounds.size.width * self.pageControl.currentPage, 0) animated:YES];
+		[self.scrollView setContentOffset:CGPointMake(self.bounds.size.width * self.pageControl.currentPage, 0)
+                                 animated:YES];
 		self.pageControlBeingUsed = YES;
 	}
 }
@@ -132,6 +140,20 @@
 	if (self.delegate) {
 		[self.delegate dismissWelcomeScreen];
 	}
+}
+
+#pragma mark - Orientation change notification listeting
+
+- (void)deviceOrientationDidChange:(NSNotification *)notification
+{
+    [self performSelector:@selector(handleOrientationChange:)
+               withObject:@([[UIDevice currentDevice] orientation])
+               afterDelay:0];
+}
+
+- (void)handleOrientationChange:(id)orientationType
+{
+   NSLog(@"Orientation is --> %@ handle me now!",orientationType);
 }
 
 @end
