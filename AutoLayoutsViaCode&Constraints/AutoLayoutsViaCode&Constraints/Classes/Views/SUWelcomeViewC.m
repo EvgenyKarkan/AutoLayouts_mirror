@@ -18,7 +18,6 @@
 @property (nonatomic, assign) BOOL pageControlBeingUsedC;
 @property (nonatomic, strong) SUFirstPageViewC *firstViewC;
 @property (nonatomic, strong) SUSecondPageViewC *secondViewC;
-@property (nonatomic, copy) NSArray *pagesC;
 
 @end
 
@@ -39,7 +38,7 @@
         [self layoutSkipButton];
         
         self.pageControlC = [[UIPageControl alloc] init];
-        self.pageControlC.numberOfPages = [@(4) integerValue] /*[self.pages count]*/;
+        self.pageControlC.numberOfPages = @[self.firstViewC, self.secondViewC] count];
         self.pageControlC.currentPage = 0;
         [self.pageControlC addTarget:self action:@selector(changePage:) forControlEvents:UIControlEventTouchUpInside];
         self.pageControlC.translatesAutoresizingMaskIntoConstraints = NO;
@@ -102,35 +101,29 @@
 
 - (void)layoutPageControl
 {
-    NSLayoutConstraint *constraint = [NSLayoutConstraint constraintWithItem:self.pageControlC
-	                                                              attribute:NSLayoutAttributeLeading
-	                                                              relatedBy:NSLayoutRelationEqual
-	                                                                 toItem:self
-	                                                              attribute:NSLayoutAttributeLeading
-	                                                             multiplier:1.0f
-	                                                               constant:0.0f];
+	[self addConstraint:[NSLayoutConstraint constraintWithItem:self.pageControlC
+	                                                 attribute:NSLayoutAttributeLeading
+	                                                 relatedBy:NSLayoutRelationEqual
+	                                                    toItem:self
+	                                                 attribute:NSLayoutAttributeLeading
+	                                                multiplier:1.0f
+	                                                  constant:0.0f]];
     
-	[self addConstraint:constraint];
+	[self addConstraint:[NSLayoutConstraint constraintWithItem:self.pageControlC
+	                                                 attribute:NSLayoutAttributeTrailing
+	                                                 relatedBy:NSLayoutRelationEqual
+	                                                    toItem:self
+	                                                 attribute:NSLayoutAttributeTrailing
+	                                                multiplier:1.0f
+	                                                  constant:-0.0f]];
     
-    constraint = [NSLayoutConstraint constraintWithItem:self.pageControlC
-                                              attribute:NSLayoutAttributeTrailing
-                                              relatedBy:NSLayoutRelationEqual
-                                                 toItem:self
-                                              attribute:NSLayoutAttributeTrailing
-                                             multiplier:1.0f
-                                               constant:-0.0f];
-    
-	[self addConstraint:constraint];
-    
-    constraint = [NSLayoutConstraint constraintWithItem:self.pageControlC
-                                              attribute:NSLayoutAttributeBottom
-                                              relatedBy:NSLayoutRelationEqual
-                                                 toItem:self
-                                              attribute:NSLayoutAttributeBottom
-                                             multiplier:1.0f
-                                               constant:-0.f];
-    
-	[self addConstraint:constraint];
+	[self addConstraint:[NSLayoutConstraint constraintWithItem:self.pageControlC
+	                                                 attribute:NSLayoutAttributeBottom
+	                                                 relatedBy:NSLayoutRelationEqual
+	                                                    toItem:self
+	                                                 attribute:NSLayoutAttributeBottom
+	                                                multiplier:1.0f
+	                                                  constant:-0.f]];
 }
 
 - (void)layoutFirstPage
@@ -148,44 +141,37 @@
 
 - (void)layoutSecondPage
 {
-    NSLayoutConstraint *constraint = [NSLayoutConstraint constraintWithItem:self.secondViewC
-                                                                  attribute:NSLayoutAttributeLeft
-                                                                  relatedBy:NSLayoutRelationEqual
-                                                                     toItem:self.firstViewC
-                                                                  attribute:NSLayoutAttributeRight
-                                                                 multiplier:1.0f
-                                                                   constant:4.f];
-    [self addConstraint:constraint];
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:self.secondViewC
+                                                     attribute:NSLayoutAttributeLeft
+                                                     relatedBy:NSLayoutRelationEqual
+                                                        toItem:self.firstViewC
+                                                     attribute:NSLayoutAttributeRight
+                                                    multiplier:1.0f
+                                                      constant:4.f]];
     
-    constraint = [NSLayoutConstraint constraintWithItem:self.secondViewC
-                                              attribute:NSLayoutAttributeTrailing
-                                              relatedBy:NSLayoutRelationEqual
-                                                 toItem:self.scrollViewC
-                                              attribute:NSLayoutAttributeTrailing
-                                             multiplier:1.0f
-                                               constant:40.f];
-    [self addConstraint:constraint];
-    
-    constraint = [NSLayoutConstraint constraintWithItem:self.secondViewC
-                                              attribute:NSLayoutAttributeTop
-                                              relatedBy:NSLayoutRelationEqual
-                                                 toItem:self.scrollViewC
-                                              attribute:NSLayoutAttributeTop
-                                             multiplier:1.0f
-                                               constant:20.f];
-    
-    [self addConstraint:constraint];
-    
-    constraint = [NSLayoutConstraint constraintWithItem:self.secondViewC
-                                              attribute:NSLayoutAttributeBottom
-                                              relatedBy:NSLayoutRelationEqual
-                                                 toItem:self.scrollViewC
-                                              attribute:NSLayoutAttributeBottom
-                                             multiplier:1.0f
-                                               constant:-20.f];
-    
-    [self addConstraint:constraint];
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:self.secondViewC
+                                                     attribute:NSLayoutAttributeTrailing
+                                                     relatedBy:NSLayoutRelationEqual
+                                                        toItem:self.scrollViewC
+                                                     attribute:NSLayoutAttributeTrailing
+                                                    multiplier:1.0f
+                                                      constant:40.f]];
 
+	[self addConstraint:[NSLayoutConstraint constraintWithItem:self.secondViewC
+	                                                 attribute:NSLayoutAttributeTop
+	                                                 relatedBy:NSLayoutRelationEqual
+	                                                    toItem:self.scrollViewC
+	                                                 attribute:NSLayoutAttributeTop
+	                                                multiplier:1.0f
+	                                                  constant:20.f]];
+    
+	[self addConstraint:[NSLayoutConstraint constraintWithItem:self.secondViewC
+	                                                 attribute:NSLayoutAttributeBottom
+	                                                 relatedBy:NSLayoutRelationEqual
+	                                                    toItem:self.scrollViewC
+	                                                 attribute:NSLayoutAttributeBottom
+	                                                multiplier:1.0f
+	                                                  constant:-20.f]];
 }
 
 #pragma mark - ScrollView's delegate stuff
@@ -207,7 +193,6 @@
 {
 	self.pageControlBeingUsedC = NO;
 }
-
 
 #pragma mark - Action on pageControl pressed
 
