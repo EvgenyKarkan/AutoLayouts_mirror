@@ -153,7 +153,7 @@
 
 - (void)handleOrientationChange:(id)orientationType
 {
-   NSLog(@"Orientation is --> %@ handle me now!",orientationType);
+    NSLog(@"Orientation is --> %@ now!", orientationType);    
 }
 
 @end
