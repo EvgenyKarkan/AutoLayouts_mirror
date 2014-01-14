@@ -15,7 +15,7 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        self.backgroundColor = [[UIColor magentaColor] colorWithAlphaComponent:0.3f];
+        self.backgroundColor = [[UIColor magentaColor] colorWithAlphaComponent:0.35f];
     }
     return self;
 }
