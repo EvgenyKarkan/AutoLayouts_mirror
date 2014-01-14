@@ -128,7 +128,7 @@
 {
 	if (sender) {
 		[self.scrollView setContentOffset:CGPointMake(self.bounds.size.width * self.pageControl.currentPage, 0)
-                                 animated:YES];
+		                         animated:YES];
 		self.pageControlBeingUsed = YES;
 	}
 }
@@ -146,14 +146,14 @@
 
 - (void)deviceOrientationDidChange:(NSNotification *)notification
 {
-    [self performSelector:@selector(handleOrientationChange:)
-               withObject:@([[UIDevice currentDevice] orientation])
-               afterDelay:0];
+	[self performSelector:@selector(handleOrientationChange:)
+	           withObject:@([[UIDevice currentDevice] orientation])
+	           afterDelay:0];
 }
 
 - (void)handleOrientationChange:(id)orientationType
 {
-    NSLog(@"Orientation is --> %@ now!", orientationType);    
+	NSLog(@"Orientation is --> %@ now!", orientationType);
 }
 
 @end

@@ -8,6 +8,7 @@
 
 #import "SUFourthPageView.h"
 
+
 @implementation SUFourthPageView
 
 - (id)initWithFrame:(CGRect)frame
