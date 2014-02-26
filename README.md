@@ -1,9 +1,9 @@
 AutoLayouts_mirror
 ==================
 
-Dealing with autolayouts.
+Dealing with autolayouts. My Bitbucket repo mirror.
 
 - Code
 - SB(struts & springs) & code
-- Constaints in code
+- Constraints in code
 - Constraints in SB
