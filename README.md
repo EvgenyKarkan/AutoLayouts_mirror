@@ -3,7 +3,11 @@ AutoLayouts_mirror
 
 Dealing with autolayouts. My Bitbucket repo mirror.
 
-- Code
-- SB(struts & springs) & code
+4 ways to deal with auotolayout related tasks in iOS:
+
+- Code way
+- StoryBoard(struts & springs) & code
 - Constraints in code
-- Constraints in SB
+- Constraints in StoryBoard 
+
+This project's workspace have 4 sub projects (each way listed above).
